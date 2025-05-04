@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lift Detox Black</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: #2c3e50; }
+        img { max-width: 100%; height: auto; margin: 20px 0; }
+        .button { background: #27ae60; color: white; padding: 15px; border: none; border-radius: 5px; display: inline-block; text-decoration: none; margin: 10px 0; }
+        section { margin-bottom: 40px; }
+    </style>
+</head>
+<body>
+    <h1 id="page-title">Carregando...</h1>
+    <div id="content"></div>
+
+    <script>
+        fetch("Lift Detox Black (Verão).json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("page-title").innerText = data.title || "Lift Detox Black";
+            const content = document.getElementById("content");
+
+            data.sections.forEach(section => {
+                const sectionEl = document.createElement("section");
+
+                section.blocks.forEach(block => {
+                    if (block.type === "title" || block.type === "text") {
+                        const p = document.createElement("p");
+                        p.innerHTML = block.text;
+                        sectionEl.appendChild(p);
+                    } else if (block.type === "img") {
+                        const img = document.createElement("img");
+                        img.src = block.url;
+                        img.alt = "Imagem";
+                        sectionEl.appendChild(img);
+                    } else if (block.type === "button") {
+                        const a = document.createElement("a");
+                        a.href = block.url;
+                        a.innerText = block.text;
+                        a.className = "button";
+                        sectionEl.appendChild(a);
+                    }
+                });
+
+                content.appendChild(sectionEl);
+            });
+        });
+    </script>
+</body>
+</html>
