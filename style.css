@@ -1,146 +1,20 @@
-/* Estilos Gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!-- Arquivo: style.css -->body { margin: 0; font-family: Arial, sans-serif; background: #000; color: #fff; }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
+header, footer { background: #111; padding: 20px; text-align: center; }
 
-h1, h2, h3 {
-    color: #333;
-}
+section { padding: 40px 20px; max-width: 1200px; margin: auto; }
 
-a {
-    text-decoration: none;
-}
+h1, h2, h3 { color: #00ff99; }
 
-/* Cabeçalho */
-header {
-    background-color: #000;
-    color: white;
-    padding: 10px 0;
-}
+.btn { display: inline-block; padding: 15px 30px; background: #00ff99; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; margin-top: 20px; }
 
-header .logo {
-    width: 200px;
-}
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: right;
-}
+.card { background: #222; border: 1px solid #00ff99; border-radius: 10px; padding: 20px; text-align: center; }
 
-header nav ul li {
-    display: inline;
-    margin-left: 20px;
-}
+img { max-width: 100%; height: auto; display: block; margin: auto; }
 
-header nav ul li a {
-    color: white;
-    font-weight: bold;
-}
+.testimonial { background: #111; padding: 20px; margin: 20px auto; border-left: 4px solid #00ff99; font-style: italic; }
 
-/* Banner */
-#banner {
-    background: url('images/banner.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-}
+footer p { color: #888; font-size: 14px; }
 
-#banner h1 {
-    font-size: 2.5em;
-}
-
-#banner p {
-    font-size: 1.2em;
-}
-
-/* Benefícios */
-#beneficios {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-#beneficios ul {
-    list-style: none;
-    padding: 0;
-}
-
-#beneficios li {
-    margin-bottom: 20px;
-}
-
-/* Ofertas */
-#ofertas {
-    background-color: #1c1c1c;
-    color: white;
-    padding: 50px 0;
-}
-
-.oferta {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.produto {
-    background-color: #333;
-    padding: 20px;
-    width: 22%;
-    text-align: center;
-}
-
-.produto h3 {
-    font-size: 1.5em;
-}
-
-.produto p {
-    font-size: 1.2em;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #f39c12;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-/* Depoimentos */
-#depoimentos {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.depoimento {
-    margin-bottom: 30px;
-}
-
-.depoimento p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.depoimento span {
-    font-weight: bold;
-    color: #333;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
