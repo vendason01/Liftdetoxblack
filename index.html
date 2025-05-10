@@ -1,54 +1,30 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Lift Detox Black</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
-        h1, h2 { color: #2c3e50; }
-        img { max-width: 100%; height: auto; margin: 20px 0; }
-        .button { background: #27ae60; color: white; padding: 15px; border: none; border-radius: 5px; display: inline-block; text-decoration: none; margin: 10px 0; }
-        section { margin-bottom: 40px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lift Detox Black</title>
+  <meta name="description" content="Lift Detox Black: emagrecimento natural com fórmula avançada e resultados comprovados. Acesse agora!">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=FB_PIXEL_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '1063880509132238');
+  </script>
 </head>
 <body>
-    <h1 id="page-title">Carregando...</h1>
-    <div id="content"></div>
-
-    <script>
-        fetch("Lift Detox Black (Verão).json")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("page-title").innerText = data.title || "Lift Detox Black";
-            const content = document.getElementById("content");
-
-            data.sections.forEach(section => {
-                const sectionEl = document.createElement("section");
-
-                section.blocks.forEach(block => {
-                    if (block.type === "title" || block.type === "text") {
-                        const p = document.createElement("p");
-                        p.innerHTML = block.text;
-                        sectionEl.appendChild(p);
-                    } else if (block.type === "img") {
-                        const img = document.createElement("img");
-                        img.src = block.url;
-                        img.alt = "Imagem";
-                        sectionEl.appendChild(img);
-                    } else if (block.type === "button") {
-                        const a = document.createElement("a");
-                        a.href = block.url;
-                        a.innerText = block.text;
-                        a.className = "button";
-                        sectionEl.appendChild(a);
-                    }
-                });
-
-                content.appendChild(sectionEl);
-            });
-        });
-    </script>
+  <header>
+    <h1>Lift Detox Black</h1>
+    <p>Fórmula avançada para emagrecimento saudável e natural.</p>
+  </header>  <section class="hero">
+    <h2>Resultados reais em poucas semanas!</h2>
+    <a href="https://ev.braip.com/ref?pl=plag8o2v&ck=chew8wl8&af=afi656j7m3" class="btn">Comprar 1 Pote</a>
+    <a href="https://ev.braip.com/ref?pl=plar06ow&ck=chew8wl8&af=afi656j7m3" class="btn">Comprar 2 Leve 3</a>
+    <a href="https://ev.braip.com/ref?pl=plageykv&ck=chew8wl8&af=afi656j7m3" class="btn">Comprar 3 Leve 5</a>
+    <a href="https://ev.braip.com/ref?pl=pladerwz&ck=chew8wl8&af=afi656j7m3" class="btn">Comprar 5 Leve 10</a>
+  </section>  <footer>
+    <p>&copy; 2025 Lift Detox Black. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
